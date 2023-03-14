@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#DD00f3",
+            },
+          },
+        },
+      };
+    </script>
     <title>Todo</title>
   </head>
   <body>
-    <h1>Todo List</h1>
+    <h1 class="text-3xl font-bold underline text-clifford">Todo List</h1>
     <div id="add-section">
       <input id="new_entry" type="text" name="new_todo" id="1" />
       <button onclick="javascript:addTodo()">Add</button>
