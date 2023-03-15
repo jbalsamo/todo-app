@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy:regular");
+
+.head-grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+body {
+  background-color: #130e0e;
+  color: white;
+  margin: 2vh;
+  padding: 1vh;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.app-title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3em;
+  padding: 1vh;
+  color: white;
+}
+
+ul.todos {
+  list-style: none;
+  width: 40vh;
+  border: medium solid darkgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+span#add-section {
+  text-align: center;
+  padding: 10px;
+  width: 40vh;
+  border: medium solid darkgray;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.caption {
+  width: 40vh;
+  font-size: 2vh;
+  text-align: center;
+}
