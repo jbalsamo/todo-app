@@ -17,7 +17,12 @@
       <input id="new_entry" type="text" name="new_todo" id="1" size="40" />
       <button onclick="javascript:addTodo()">Add</button>
       <br />
-      <input type="checkbox" name="hide-done" id="hd" />
+      <input
+        type="checkbox"
+        name="hide-done"
+        id="hd"
+        onchange="javascript:isHideChecked()"
+      />
       <label for="hd">Hide Completed Items</label>
     </span>
     <div class="caption"><p>List</p></div>

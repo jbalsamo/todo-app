@@ -27,12 +27,28 @@ const addTodo = () => {
   location.reload();
 };
 
+const isHideChecked = () => {
+  let checked = document.getElementsByName("hide-done")[0].checked;
+  console.log(checked);
+  return checked;
+};
+
+const isHiddenSet = () => {
+  let hidden = window.localStorage.getItem("hideDone");
+  if (!hidden) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
 const url = "http://localhost:4000";
 var myHeaders = new Headers();
 var list_div = document.getElementById("list_section");
 var list = document.getElementsByTagName("ul")[0];
 myHeaders.append("content-type", "application/json");
-
+let h = isHiddenSet();
+console.log("Hidden:", h);
 var raw = JSON.stringify({
   query: "query getAllTodos {\n  todos {\n    id\n    desc\n    done\n  }\n}",
 });
