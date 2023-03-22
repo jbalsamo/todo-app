@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../hatapollo"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "todo-app"
+  }
+}
